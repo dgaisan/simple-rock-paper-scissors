@@ -2,13 +2,10 @@
 //  ViewController.swift
 //  Rock Paper Scissors
 //
-//  Created by Dmitri Gaisan on 3/4/19.
-//  Copyright © 2019 Dmitri Gaisan. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
