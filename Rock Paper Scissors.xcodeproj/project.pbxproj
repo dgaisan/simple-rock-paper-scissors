@@ -14,6 +14,7 @@
 		A57FFF6B222DF8FE00E52855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57FFF69222DF8FE00E52855 /* LaunchScreen.storyboard */; };
 		A57FFF74222E09CD00E52855 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FFF73222E09CD00E52855 /* Moves.swift */; };
 		A57FFF76222E1E1000E52855 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FFF75222E1E1000E52855 /* Match.swift */; };
+		A57FFF78222E239B00E52855 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FFF77222E239B00E52855 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A57FFF6C222DF8FE00E52855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57FFF73222E09CD00E52855 /* Moves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
 		A57FFF75222E1E1000E52855 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A57FFF77222E239B00E52855 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A57FFF69222DF8FE00E52855 /* LaunchScreen.storyboard */,
 				A57FFF6C222DF8FE00E52855 /* Info.plist */,
 				A57FFF73222E09CD00E52855 /* Moves.swift */,
+				A57FFF77222E239B00E52855 /* ResultsViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				A57FFF63222DF8FC00E52855 /* MainViewController.swift in Sources */,
 				A57FFF61222DF8FB00E52855 /* AppDelegate.swift in Sources */,
 				A57FFF74222E09CD00E52855 /* Moves.swift in Sources */,
+				A57FFF78222E239B00E52855 /* ResultsViewController.swift in Sources */,
 				A57FFF76222E1E1000E52855 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

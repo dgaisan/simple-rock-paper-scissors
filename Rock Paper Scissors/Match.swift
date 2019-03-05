@@ -41,7 +41,7 @@ enum Match {
         }
         
         if playerOne == .Scissors {
-            switch playerOne {
+            switch playerTwo {
             case .Paper:
                 return .Win
             case .Rock:

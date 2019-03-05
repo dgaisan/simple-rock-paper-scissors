@@ -41,6 +41,9 @@
                                     <color key="titleColor" red="0.56673297802233868" green="1" blue="0.75828208059591762" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1p1-A5-VSP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JM-dA-smE">
                                 <rect key="frame" x="117.5" y="315" width="140" height="140"/>
@@ -55,6 +58,9 @@
                                     <color key="titleColor" red="0.566732978" green="1" blue="0.75828208060000002" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="paperPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhd-8o-a45"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-dv-FWC">
                                 <rect key="frame" x="117.5" y="480" width="140" height="140"/>
@@ -69,6 +75,9 @@
                                     <color key="titleColor" red="0.566732978" green="1" blue="0.75828208060000002" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="scissorsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMA-Lg-72c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,22 +98,14 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="zc2-EY-8eW">
             <objects>
-                <viewController storyboardIdentifier="ResultsVC" id="I3Z-mN-qGr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsVC" id="I3Z-mN-qGr" customClass="ResultsViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2Z-wc-XSG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNm-BJ-uZg">
-                                <rect key="frame" x="16" y="626" width="50" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock vs Scissors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJd-jd-XvM">
                                 <rect key="frame" x="104" y="120" width="167" height="28"/>
                                 <constraints>
@@ -120,16 +121,34 @@
                                 <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyZ-Vg-AG3">
+                                <rect key="frame" x="15" y="622" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bS6-bu-RwJ"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeView:" destination="I3Z-mN-qGr" eventType="touchUpInside" id="WUz-nS-aWR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zyZ-Vg-AG3" firstAttribute="leading" secondItem="Luo-xN-tah" secondAttribute="leading" constant="15" id="1kF-G8-ob9"/>
                             <constraint firstItem="MJd-jd-XvM" firstAttribute="centerX" secondItem="c2Z-wc-XSG" secondAttribute="centerX" id="HY4-df-nMO"/>
                             <constraint firstItem="DME-u9-4NY" firstAttribute="centerX" secondItem="c2Z-wc-XSG" secondAttribute="centerX" id="Hc1-0E-Leu"/>
+                            <constraint firstItem="Luo-xN-tah" firstAttribute="bottom" secondItem="zyZ-Vg-AG3" secondAttribute="bottom" constant="15" id="gu0-1e-Maj"/>
                             <constraint firstItem="DME-u9-4NY" firstAttribute="centerY" secondItem="c2Z-wc-XSG" secondAttribute="centerY" id="tO9-mh-WTg"/>
                             <constraint firstItem="MJd-jd-XvM" firstAttribute="top" secondItem="Luo-xN-tah" secondAttribute="top" constant="100" id="vIT-p7-dhM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Luo-xN-tah"/>
                     </view>
+                    <connections>
+                        <outlet property="announcementLabel" destination="DME-u9-4NY" id="vWl-kW-MFO"/>
+                        <outlet property="resultsLabel" destination="MJd-jd-XvM" id="WFc-0a-S6u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4W-FD-VOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
